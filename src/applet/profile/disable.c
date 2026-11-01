@@ -11,11 +11,11 @@
 static int applet_main(int argc, char **argv) {
     int ret;
     const char *param;
-    bool refreshflag = false;
+    bool refreshflag = true;
 
     if (argc < 2) {
         printf("Usage: %s [iccid/aid] [refreshflag]\n", argv[0]);
-        printf("\t[refreshflag]: optional\n");
+        printf("\t[refreshflag]: optional, 1 by default\n");
         return -1;
     }
 
